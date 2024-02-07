@@ -20,4 +20,6 @@ function enviar(){
 
     window.open(linkWhatsApp, "_blank")
 
+    
+
 }
