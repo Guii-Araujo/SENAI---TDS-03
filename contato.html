@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gui Pizzaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #conteudo {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #conteudo h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left; 
+        }
+
+        #conteudo label {
+            font-size: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+            display: inline-block; 
+        }
+
+        #conteudo input[type="text"],
+        #conteudo input[type="email"],
+        #conteudo textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #conteudo textarea {
+            height: 150px;
+        }
+
+        #conteudo input[type="submit"] {
+            background-color: #FF6F61;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #conteudo input[type="submit"]:hover {
+            background-color: #FF3C38;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gui Pizzaria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Por favor, preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+            <form action="mailto:seuemail@gmail.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

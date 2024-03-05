@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Gui Pizzaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #conteudo {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #conteudo h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #conteudo label {
+            font-size: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        #conteudo input[type="text"],
+        #conteudo input[type="number"],
+        #conteudo select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #conteudo input[type="submit"] {
+            background-color: #FF6F61;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        #conteudo input[type="submit"]:hover {
+            background-color: #FF3C38;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gui Pizzaria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <h2>Faça seu Pedido</h2>
+            <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+                <input type="hidden" name="phone" value="NUMERO_DO_WHATSAPP">
+                <input type="hidden" name="text" value="Olá! Gostaria de fazer um pedido!">
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+
+                <label for="endereco">Endereço de Entrega:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="pizzas">Escolha sua Pizza:</label>
+                <select name="pizzas" id="pizzas" required>
+                    <option value="margherita">Pizza Margherita - R$20,00</option>
+                    <option value="pepperoni">Pizza Pepperoni - R$22,00</option>
+                    <option value="quatro_queijos">Pizza Quatro Queijos - R$24,00</option>
+                    <option value="margherita">Pizza Margherita - R$20,00</option>
+                    <option value="pepperoni">Pizza Pepperoni - R$22,00</option>
+                    <option value="quatro_queijos">Pizza Quatro Queijos - R$24,00</option>
+                    <option value="calabresa">Pizza Calabresa - R$23,00</option>
+                    <option value="portuguesa">Pizza Portuguesa - R$25,00</option>
+                    <option value="frango_catupiry">Pizza Frango com Catupiry - R$24,00</option>
+                    <option value="vegetariana">Pizza Vegetariana - R$24,00</option>
+                    <option value="margherita_especial">Pizza Margherita Especial - R$26,00</option>
+                    <option value="napolitana">Pizza Napolitana - R$23,00</option>
+                    <option value="siciliana">Pizza Siciliana - R$24,00</option>
+                    <option value="caprese">Pizza Caprese - R$25,00</option>
+                    <option value="toscana">Pizza Toscana - R$26,00</option>
+                    <option value="marguerita_gorgonzola">Pizza Marguerita com Gorgonzola - R$27,00</option>
+                    <option value="alho_poro">Pizza de Alho Poró - R$26,00</option>
+                    <option value="quatro_estacoes">Pizza 4 Estações - R$28,00</option>
+                    </select>
+                    
+                </select>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+                <input type="submit" value="Fazer Pedido">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
