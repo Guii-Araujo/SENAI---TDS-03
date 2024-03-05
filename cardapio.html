@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Gui Pizzaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #conteudo {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #conteudo h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #conteudo ul li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #conteudo ul li span {
+            font-weight: bold;
+        }
+
+        #conteudo a {
+            display: inline-block;
+            background-color: #FF6F61;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #conteudo a:hover {
+            background-color: #FF3C38;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gui Pizzaria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <h2>Cardápio</h2>
+            <ul>
+                <li><span>Pizza Margherita:</span> Molho de tomate, muçarela, manjericão fresco - R$20,00</li>
+                <li><span>Pizza Pepperoni:</span> Molho de tomate, muçarela, pepperoni - R$22,00</li>
+                <li><span>Pizza Quatro Queijos:</span> Molho de tomate, muçarela, provolone, parmesão, gorgonzola - R$24,00</li>
+                <li><span>Pizza Calabresa:</span> Molho de tomate, muçarela, calabresa fatiada, cebola - R$23,00</li>
+                <li><span>Pizza Portuguesa:</span> Molho de tomate, muçarela, presunto, ovos, cebola, ervilha, azeitonas - R$25,00</li>
+                <li><span>Pizza Frango com Catupiry:</span> Molho de tomate, muçarela, frango desfiado, catupiry - R$24,00</li>
+                <li><span>Pizza Vegetariana:</span> Molho de tomate, muçarela, tomate, pimentão, cebola, cogumelos, azeitonas - R$24,00</li>
+                <li><span>Pizza Margherita Especial:</span> Molho de tomate, muçarela de búfala, tomate cereja, manjericão fresco - R$26,00</li>
+                <li><span>Pizza Napolitana:</span> Molho de tomate, muçarela, anchovas, alcaparras, azeitonas pretas - R$23,00</li>
+                <li><span>Pizza Siciliana:</span> Molho de tomate, muçarela, tomate, abobrinha, berinjela, pimentão, azeitonas - R$24,00</li>
+                <li><span>Pizza Caprese:</span> Molho de tomate, muçarela de búfala, tomate, manjericão, azeitonas - R$25,00</li>
+                <li><span>Pizza Toscana:</span> Molho de tomate, muçarela, linguiça toscana, cebola, pimentão, azeitonas - R$26,00</li>
+                <li><span>Pizza Marguerita com Gorgonzola:</span> Molho de tomate, muçarela, tomate cereja, manjericão, gorgonzola - R$27,00</li>
+                <li><span>Pizza de Alho Poró:</span> Molho de tomate, muçarela, alho poró, bacon, azeitonas - R$26,00</li>
+                <li><span>Pizza 4 Estações:</span> Molho de tomate, muçarela, presunto, champignon, palmito, ervilha, azeitonas - R$28,00</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
